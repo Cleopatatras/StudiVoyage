@@ -11,6 +11,7 @@
   font-family: "Merri";
 }
 :root {
+  --bg-primary: #59b9c7;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -24,7 +25,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #59b9c7;
   --secondary: #6c757d;
   --bs-tertiary-bg-rgb: white;
   --success: #28a745;
@@ -47,14 +48,14 @@
 
 header {
   width: 100vw;
-  height: 50rem;
+  height: 41rem;
   background: url(/assets/images/fondHeader.png) fixed center/cover;
   position: relative;
   top: 0;
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgb(248 249 250 / 15%) !important;
+  background-color: rgba(248, 249, 250, 0) !important;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -66,6 +67,123 @@ header {
 nav a:hover {
   background: #59b9c7;
 }
+
 .recherche {
   margin: 25px;
+  bottom: 160px;
+  position: absolute;
+  left: 330px;
+}
+.accroche {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.form-select {
+  background: transparent;
+}
+.form-control {
+  background: transparent;
+}
+/* ---------------------------- Card ---------------- */
+.carte {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.unitCard {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: column;
+}
+.descCard {
+  display: flex;
+  align-items: center;
+}
+.blabla {
+  width: 75%;
+}
+.reduc {
+  width: 25%;
+}
+.prixCard {
+  display: flex;
+  align-items: center;
+}
+.noteCard {
+  width: 30%;
+}
+.prixRemisCard {
+  width: 70%;
+  text-align: right;
+}
+.titre h2{
+    font-size: 2rem;
+    color: var(--bg-primary);
+}
+h3 {
+  font-size: 1.5rem;
+  color: var(--bg-primary);
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: gray;
+}
+.reduc {
+  height: 40%;
+  width: 20%;
+  background: #ffb527;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+.prixCard span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--bg-primary);
+}
+.prixRemisCard p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--bg-primary);
+  margin-bottom: -0.5rem;
+  margin-top: -1rem;
+}
+/* --------------------- Section diaporama -------------- */
+
+.carousel-caption {
+  top: 2rem; !important
+}
+
+
+/* ---------------------Section dernière minutes -------------- */
+
+
+
+ /* ------------------- Footer ---------------------------- */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-primary);
+    color: white;
+}
+.reseaux p{
+    margin: 0.4rem;
+}
+.reseaux i{
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
 }

@@ -44,7 +44,7 @@
                                 Accès
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Inscription</a></li>
+                                <li><a class="dropdown-item" href="pages/signin.html">Inscription</a></li>
                                 <li><a class="dropdown-item" href="#">Connexion</a></li>
                             </ul>
                         </li>
@@ -58,27 +58,27 @@
         </div>
         <section class="recherche">
             <form class="row g-0">
-                <div class="col-3 sm-3">
+                <div class="col-4 sm-3 ">
                     <!-- <label for="validationDefault01" class="form-label">First name</label> -->
                     <input type="text" class="form-control text-white" id="validationDefault01"
                         value="Destination (pays, région,ville)" required>
                 </div>
-                <div class="col sm-2">
+                <div class="col-2 sm-2">
                     <!-- <label for="validationDefault02" class="form-label">Ville de départ</label> -->
                     <select class="form-select text-white" id="validationDefault02" required>
                         <option selected disabled value="">Ville de départ...</option>
-                        <option>Lyon St Exupéry</option>
-                        <option>Paris CDG</option>
-                        <option>Bâle-Mulhouse</option>
+                        <option class="transp">Lyon St Exupéry</option>
+                        <option class="transp">Paris CDG</option>
+                        <option class="transp">Bâle-Mulhouse</option>
                     </select>
                 </div>
                 <div class="col sm-1">
                     <!-- <label for="validationDefault03" class="form-label">Ville de départ</label> -->
                     <select class="form-select text-white" id="validationDefault03" required>
                         <option selected disabled value="">Durée</option>
-                        <option>Week end</option>
-                        <option>7 jours</option>
-                        <option>15 jours</option>
+                        <option class="transp">Week end</option>
+                        <option class="transp">7 jours</option>
+                        <option class="transp">15 jours</option>
                     </select>
                 </div>
                 <div class="col sm-2">
@@ -90,9 +90,9 @@
                     <!-- <label for="validationDefault05" class="form-label">Ville de départ</label> -->
                     <select class="form-select text-white" id="validationDefault05" required>
                         <option selected disabled value="">Filtres</option>
-                        <option>Mer</option>
-                        <option>Croisière</option>
-                        <option>Montagne</option>
+                        <option class="transp">Mer</option>
+                        <option class="transp">Croisière</option>
+                        <option class="transp">Montagne</option>
                     </select>
                 </div>
                 <div class="col sm-2">
@@ -222,7 +222,8 @@
         <h2>Nos offres de dernières minutes !</h2>
     </div>
 
-    <section class="derMinutes">
+    <section class="container minutes">
+
 
         <div class="container unitCard">
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -279,6 +280,7 @@
                 </div>
             </div>
         </div>
+
 
     </section>
     <!-- ----------------Footer ---------------------- -->

@@ -85,6 +85,10 @@ nav a:hover {
 .form-control {
   background: transparent;
 }
+.transp {
+  background: transparent;
+  color: black;
+}
 /* ---------------------------- Card ---------------- */
 .carte {
   display: flex;
@@ -125,9 +129,9 @@ nav a:hover {
   width: 70%;
   text-align: right;
 }
-.titre h2{
-    font-size: 2rem;
-    color: var(--bg-primary);
+.titre h2 {
+  font-size: 2rem;
+  color: var(--bg-primary);
 }
 h3 {
   font-size: 1.5rem;
@@ -164,26 +168,34 @@ h5 {
 /* --------------------- Section diaporama -------------- */
 
 .carousel-caption {
-  top: 2rem; !important
+  top: 2rem;
 }
-
 
 /* ---------------------Section dernière minutes -------------- */
 
-
-
- /* ------------------- Footer ---------------------------- */
-footer{
-    display: flex;
-    justify-content: space-around;
-    background: var(--bg-primary);
-    color: white;
+/* ------------------- Footer ---------------------------- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg-primary);
+  color: white;
 }
-.reseaux p{
-    margin: 0.4rem;
+.reseaux p {
+  margin: 0.4rem;
 }
-.reseaux i{
-    font-size: 1.5rem;
-    padding: 5px;
-    text-align: center;
+.reseaux i {
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+}
+
+/* ----------------------------Page signin ---------------- */
+
+.hero-scene {
+  background-image: url(/assets/images/japon1.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 15px;
 }
